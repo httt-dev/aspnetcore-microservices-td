@@ -28,10 +28,10 @@ services:
     image: portainer/portainer-ce
 
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.17.6
 
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.17.2
+    image: docker.elastic.co/kibana/kibana:7.17.6
 
 #network section
 #De cho de cau hinh cac server thi cho chung network

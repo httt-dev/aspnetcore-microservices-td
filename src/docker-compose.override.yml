@@ -63,7 +63,7 @@ services:
   pgadmin:
     container_name: pgadmin
     environment:
-      - PGADMIN_DEFAULT_EMAIL=admin@tedu_microservice.com
+      - PGADMIN_DEFAULT_EMAIL=codedao.io@gmail.com
       - PGADMIN_DEFAULT_PASSWORD=Abc12345
     restart: always
     ports:
@@ -86,8 +86,8 @@ services:
     environment:
       - xpack.monitoring.enabled=true
       - xpack.watcher.enabled=false
-      - "ES_JAVA_OPTS=-Xms512m - Xmx512m"
-      - discovery.type=signle-node
+      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - discovery.type=single-node
     ports:
       - "9200:9200"
     volumes:
